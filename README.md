@@ -45,3 +45,7 @@ You can visit `http://localhost:3000/` to look your React
 5.Router
 
 > 一个网站，光有首页是不够的，需要添加页面跳转功能，才能让访问者逐层地看到网站丰富的内容。传统的前端页面使用超链接的方式进行跳转，比如：HTML标签中的  `<a href=' '>点击</a>` ，浏览器获取到链接地址后，会根据这个地址进行访问。然而，React框架采用的Router却不是传统的链接跳转。因为，严格来说，React项目中的内容都是呈现在一张HTML中的
+
+6.React18 has some different... still learning...
+
+7.Router!Route!Link!{}!
