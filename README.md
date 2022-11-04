@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# BABY CREATE REACT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This section refers to official documentation and is based on references when there is nothing
 
-## Available Scripts
+Empty folder：
 
-In the project directory, you can run:
+```bash
+npx create-react-app yourprojectname
+cd yourprojectname
+npm start
+```
 
-### `npm start`
+You can visit `http://localhost:3000/` to look your React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+初始项目结构如下：
+┌── public               // 公共资源文件
+│   ├── favicon.ico      // 是浏览器tab上图标，也是这个项目的一个标志，也可以说是代表一个公司的标志。可以替换。
+│   ├── index.html       // 主文件
+│   └── manifest.json    // 编译配置文件
+│
+├── node_modules         // 项目依赖包文件夹
+├── src                  // 我们的项目的源码编写文件（里面的文件可根据喜好，随意更改）
+│   ├── App.css          // 样式文件（删除）
+│   ├── App.js           // 入口组件，其他组件会被插入此组件中，此组件通过index.js再插入 index.html 文件里，形成单页面应用；
+│   ├── App.test.js      // 测试文件（删除）
+│   ├── index.css        // 样式文件（删除）
+│   ├── index.js         // 存放的是这个项目的核心内容，也就是我们的主要工作区域。其中，index.js文件是和index.html进行关联的文件的唯一接口，类似vue里面的main.js。
+│   ├── serviceWorker.js // 
+├── package-lock.json    // npm5 新增文件，优化性能
+├── package.json         // 项目依赖包配置文件（node配置文件）
+└── README.md            // 项目说明文档
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# What I learned today (what's in this project)
 
-### `npm test`
+1.Find out what the React project has.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.Delete anything in src
 
-### `npm run build`
+3.first component:App.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.know State and know Props by View.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> 一个网站，光有首页是不够的，需要添加页面跳转功能，才能让访问者逐层地看到网站丰富的内容。传统的前端页面使用超链接的方式进行跳转，比如：HTML标签中的  `<a href=' '>点击</a>` ，浏览器获取到链接地址后，会根据这个地址进行访问。然而，React框架采用的Router却不是传统的链接跳转。因为，严格来说，React项目中的内容都是呈现在一张HTML中的
