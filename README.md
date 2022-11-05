@@ -1,6 +1,8 @@
 # BABY CREATE REACT
 
 > This section refers to official documentation and is based on references when there is nothing
+>
+> 这一节就是我记录咋开一个React项目
 
 Empty folder：
 
@@ -34,18 +36,24 @@ You can visit `http://localhost:3000/` to look your React
 
 # What I learned today (what's in this project)
 
-1.Find out what the React project has.
+1.Find out what the React project has.	了解一个React项目有啥
 
-2.Delete anything in src
+2.Delete anything in src	删除原来的`src`中的内容(`src`留着)
 
-3.first component:App.js
+3.first component:App.js	创建第一个组件`App.js`来`Helloworld`
 
-4.know State and know Props by View.js
+4.know State and know Props by View.js	创建`View.js`学习`State`和`Props` 
 
-5.Router
+5.Router	学路由(对应`Home.js`,`Page1.js`,`Page2.js`,`Page3.js`)
 
 > 一个网站，光有首页是不够的，需要添加页面跳转功能，才能让访问者逐层地看到网站丰富的内容。传统的前端页面使用超链接的方式进行跳转，比如：HTML标签中的  `<a href=' '>点击</a>` ，浏览器获取到链接地址后，会根据这个地址进行访问。然而，React框架采用的Router却不是传统的链接跳转。因为，严格来说，React项目中的内容都是呈现在一张HTML中的
 
-6.React18 has some different... still learning...
+6.React18 has some different... still learning...	发现一些error来自版本问题...
 
-7.Router!Route!Link!{}!
+7.Router!Route!Link!{}!	注意版本问题外import的问题，还有一些格式问题
+
+---
+
+8.Learn how to use CSS	React项目中采用的是虚拟DOM，组件也是放在一个个的JS文件中，所以CSS的使用和引入方式就略有不同，这里我是`Page1.js`内嵌CSS，`Page2.js`是引入`style.css`，这里补充一下，照理应该少用px而是用百分比，但是这个就是demo所以我随意了...
+
+It's now 2022-11-6 0:04, wake up and look at data interaction
