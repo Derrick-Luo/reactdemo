@@ -5,7 +5,7 @@ import RouteTest from './RouteTest'
 
 ReactDOM.render(
     <div>
-        <p>Hello,React</p>
+        <p>#Test index.js ={'>'} Hello,React</p>
         <App/>
         <RouteTest/>
     </div>,

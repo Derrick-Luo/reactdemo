@@ -6,12 +6,13 @@ class Home extends React.Component {
         return(
             <div>
                 <div>
-                    This is Home!
+                    Home!Home!Home!!!
+                    #Test Route and Link ={'>'} This is Home!
                 </div>
                 <div>
-                    <Link to="/page1">Page1</Link>
-                    <Link to="/page2">Page2</Link>
-                    <Link to="/page3">Page3</Link>
+                    <Link to="/page1">Page1</Link><br></br>
+                    <Link to="/page2">Page2</Link><br></br>
+                    <Link to="/page3">Page3</Link><br></br>
                 </div>
             </div>
         );

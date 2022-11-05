@@ -6,7 +6,7 @@ class App extends React.Component {
         //构造函数
         super(props);
         this.state = {
-            text:'This is TEXTTT!'
+            text:'#Test App.js and View.js => This is TEXTTT!'
         }
     }
     render(){
