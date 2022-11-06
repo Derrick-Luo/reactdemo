@@ -57,3 +57,75 @@ You can visit `http://localhost:3000/` to look your React
 8.Learn how to use CSS	React项目中采用的是虚拟DOM，组件也是放在一个个的JS文件中，所以CSS的使用和引入方式就略有不同，这里我是`Page1.js`内嵌CSS，`Page2.js`是引入`style.css`，这里补充一下，照理应该少用px而是用百分比，但是这个就是demo所以我随意了...
 
 It's now 2022-11-6 0:04, wake up and look at data interaction
+
+---
+
+It's now 2022-11-6 21:15, I suddenly remembered to learn...
+
+9.Request data from the server and display it
+
+> use`$ cnpm install express --save` 
+>
+> https://www.runoob.com/nodejs/nodejs-express-framework.html
+>
+> 去搭建server
+>
+> 当然纯为了react，给个假数据也是可以的
+
+>关于这个server就不单独开个仓库了，本来这个reactdemo就有点蠢了...\
+>
+>新建文件夹
+>
+>`cnpm install express --save`
+>
+>`cnpm install body-parser --save`
+>
+>`cnpm install cookie-parser --save`
+>
+>`cnpm install multer --save`
+>
+>创建`myserver.js`
+>
+>`myserver.js`内容：
+>
+>```js
+>var express = require('express');
+>var app = express();
+>//跨域问题
+>app.all('*', function(req, res, next) {
+>    res.header("Access-Control-Allow-Origin", "*");
+>    res.header("Access-Control-Allow-Headers","X-Requested-With");
+>    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+>    res.header("X-Powered-By",' 3.2.1');
+>    res.header("Content-Type","application/json;charset=utf-8"); 
+>    next();
+>});
+>app.get('/', function(req, res) {
+>        res.send('GoodMorning!node!');
+>    }
+>)
+>app.get('/json', function(req, res) { 
+>    //添加的代码
+>    let myjson = {
+>        name :'LuoCheng',
+>        IQ :'65535',
+>        date : '2022-11-6'
+>    }
+>    res.send(myjson);
+>})
+>var server = app.listen(8081, function() {
+>        var host = server.address().address
+>        var port =server.address().port
+>        console.log("应用实例，访问地址为 http://%s:%s",host,port)
+>    }
+>)
+>```
+>
+>`node myserver.js`
+>
+>可访问`localhost:8081/`
+
+回到react
+
+10.请求数据 用刚好没用的page3从node那里拿数据
+
